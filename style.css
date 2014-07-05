@@ -1,7 +1,6 @@
 .base {
   width: 970px;
   margin: 0 auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .slider {
   width: 650px;
@@ -18,12 +17,4 @@
   height: 100px;
   margin: 0;
   padding: 0;
-}
-@font-face {
-  font-family: bebas;
-  src: url(font/bebas.ttf);
-}
-ul.navbar-nav li a{
-  font-family: bebas;
-  font-size: 16px;
 }
