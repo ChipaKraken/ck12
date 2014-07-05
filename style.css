@@ -1,0 +1,20 @@
+.base {
+  width: 970px;
+  margin: 0 auto;
+}
+.slider {
+  width: 650px;
+  float: left;
+}
+.icons{
+  float: right;
+}
+.kraken {
+  text-align: right;
+}
+.icons .block {
+  width: 320px;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+}
