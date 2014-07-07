@@ -4,6 +4,9 @@ angular.module('app', ['ui.router']).config([
     $stateProvider.state('main', {
       url: '/',
       templateUrl: 'main.html'
+    }).state('gallery', {
+      url: '/gallery',
+      templateUrl: 'gallery.html'
     })
   }
 ]).controller('mainContr', [
