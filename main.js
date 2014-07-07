@@ -15,4 +15,8 @@ angular.module('app', ['ui.router']).config([
       return "chipa";
     };
   }
-]);
+]).controller("headerController", ['$scope', '$location',function ($scope, $location) { 
+    $scope.isActive = function (viewLocation) { 
+        return viewLocation === $location.path();
+    }
+}]);
