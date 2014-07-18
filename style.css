@@ -36,3 +36,9 @@ ul.navbar-nav li a{
   padding-right: 209px;
   padding-top: 7px;
 }
+.hide {
+  display: none;
+}
+.show {
+  display: inline;
+}
