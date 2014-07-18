@@ -20,15 +20,15 @@
 <body ng-app="app">
 	<div class="base">
 	<div class="kraken">
-		<i class="fs28 kraken-fb"></i>
+		<!-- <i class="fs28 kraken-fb"></i>
 		<i class="fs28 kraken-tw"></i>
 		<i class="fs28 kraken-ig"></i>
 		<i class="fs28 kraken-ok"></i>
-		<i class="fs28 kraken-vk"></i>
-
+		<i class="fs28 kraken-vk"></i> -->
+		<img data-src="holder.js/100%x144/text:12 LOGO" alt="">
 	</div>
 	
-	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+	<nav class="navbar navbar-default navbar-static-top" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-7">
@@ -43,12 +43,11 @@
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-7" ng-controller="headerController">
 				<ul class="nav navbar-nav">
 					<li ng-class="{ active: isActive('/')}"><a href="#">Главная</a></li>
-					<li><a href="#">О нас</a></li>
-					<li><a href="#">Меню</a></li>
 					<li><a href="#">Блог</a></li>
-					<li ng-class="{ active: isActive('/gallery')}"><a href="#/gallery">Галерея</a></li>
-					<li><a href="#">Услуги</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Галерея</a></li>
+					<li ng-class="{ active: isActive('/gallery')}"><a href="#/gallery">Insta Галерея</a></li>
+					<li><a href="#">О нас</a></li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</div>
