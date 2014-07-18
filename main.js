@@ -7,6 +7,15 @@ angular.module('app', ['ui.router']).config([
     }).state('gallery', {
       url: '/gallery',
       templateUrl: 'gallery.html'
+    }).state('bar', {
+      url: '/bar',
+      templateUrl: 'main-bar.html'
+    }).state('cave', {
+      url: '/cave',
+      templateUrl: 'main-cave.html'
+    }).state('rest', {
+      url: '/rest',
+      templateUrl: 'main-rest.html'
     })
   }
 ]).controller('mainContr', [
