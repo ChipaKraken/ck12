@@ -71,23 +71,19 @@ angular.module('app', ['ui.router']).config([
 ]).controller("headerController", ['$scope', '$location',function ($scope, $location) { 
     $scope.isActive = function (viewLocation) { 
         return viewLocation === $location.path();
-    }
-    var a = {}
-    a.path = $location.path(); 
-    // if ($location.path() === '/bar'){
-    //   document.getElementsByTagName('body')[0].className = "bar_bg";
-    // }
-    // else if($location.path() === '  /cave'){
-    //   document.getElementsByTagName('body')[0].className = "cave_bg";
-    // }
-    // else if($location.path() === '/rest'){
-    //   document.getElementsByTagName('body')[0].className = "rest_bg";
-    // }
-    // else{
-    //   document.getElementsByTagName('body')[0].className = "def_bg";
-    // };
-    a.watch('path', function (id, oldval, newval) {
-      console.log( "o." + id + " changed from " + oldval + " to " + newval );
-      return newval;
-    })
+    } 
+    $scope.$on('$routeUpdate', function(){
+      if ($location.path() === '/bar'){
+        document.getElementsByTagName('body')[0].className = "bar_bg";
+      }
+      else if($location.path() === '  /cave'){
+        document.getElementsByTagName('body')[0].className = "cave_bg";
+      }
+      else if($location.path() === '/rest'){
+        document.getElementsByTagName('body')[0].className = "rest_bg";
+      }
+      else{
+        document.getElementsByTagName('body')[0].className = "def_bg";
+      };
+    });
 }]);
