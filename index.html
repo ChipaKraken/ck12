@@ -18,7 +18,7 @@
     </style>
 </head>
 <body ng-app="app">
-<div ng-class="{'bar_bg':isActive('/bar'), 'cave_bg':isActive('/cave'), 'rest_bg':isActive('/rest')}">
+<div ng-controller="headerController" ng-class="{'bar_bg':isActive('/bar'), 'cave_bg':isActive('/cave'), 'rest_bg':isActive('/rest')}">
 	<div class="base">
 	<div class="kraken">
 		<!-- <i class="fs28 kraken-fb"></i>
@@ -41,7 +41,7 @@
 				<!-- <a class="navbar-brand" href="#">Brand</a> -->
 			</div>
 
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-7" ng-controller="headerController">
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-7">
 				<ul class="nav navbar-nav">
 					<li ng-class="{ active: isActive('/')}"><a href="#">Главная</a></li>
 					<li><a href="#">Блог</a></li>
