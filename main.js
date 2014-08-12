@@ -33,7 +33,7 @@ angular.module('app', ['ui.router']).config([
       if ($location.path() === '/bar'){
         document.getElementsByTagName('body')[0].className = "bar_bg";
       }
-      else if($location.path() === '  /cave'){
+      else if($location.path() === '/cave'){
         document.getElementsByTagName('body')[0].className = "cave_bg";
       }
       else if($location.path() === '/rest'){
