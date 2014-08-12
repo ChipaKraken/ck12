@@ -72,7 +72,7 @@ angular.module('app', ['ui.router']).config([
     $scope.isActive = function (viewLocation) { 
         return viewLocation === $location.path();
     }
-    $scope.path = $location.path(); 
+    a.path = $location.path(); 
     // if ($location.path() === '/bar'){
     //   document.getElementsByTagName('body')[0].className = "bar_bg";
     // }
@@ -85,7 +85,7 @@ angular.module('app', ['ui.router']).config([
     // else{
     //   document.getElementsByTagName('body')[0].className = "def_bg";
     // };
-    $scope.watch('path', function (id, oldval, newval) {
+    a.watch('path', function (id, oldval, newval) {
       console.log( "o." + id + " changed from " + oldval + " to " + newval );
       return newval;
     })
