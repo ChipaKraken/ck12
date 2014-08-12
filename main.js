@@ -72,6 +72,7 @@ angular.module('app', ['ui.router']).config([
     $scope.isActive = function (viewLocation) { 
         return viewLocation === $location.path();
     }
+    var a = {}
     a.path = $location.path(); 
     // if ($location.path() === '/bar'){
     //   document.getElementsByTagName('body')[0].className = "bar_bg";
