@@ -28,4 +28,16 @@ angular.module('app', ['ui.router']).config([
     $scope.isActive = function (viewLocation) { 
         return viewLocation === $location.path();
     }
+    if ($location.path() === '/bar'){
+      document.getElementsByTagName('body')[0].className = "bar_bg";
+    }
+    else if($location.path() === '/cave'){
+      document.getElementsByTagName('body')[0].className = "cave_bg";
+    }
+    else if($location.path() === '/rest'){
+      document.getElementsByTagName('body')[0].className = "rest_bg";
+    }
+    else{
+      document.getElementsByTagName('body')[0].className = "def_bg";
+    };
 }]);
