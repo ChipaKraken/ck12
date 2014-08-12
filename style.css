@@ -43,7 +43,17 @@ ul.navbar-nav li a{
 .show {
   display: inline;
 }
-body{
+.bar_bg{
+  background-image: url(https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xfa1/t1.0-9/10169252_503657716406339_1648155726_n.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cave_bg{
+  background-image: url(https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xfa1/t1.0-9/1002865_445279388902795_1699479361_n.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rest_bg{
   background-image: url(https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xpf1/t31.0-8/10264186_637493859661368_1192978786499620682_o.jpg);
   background-repeat: no-repeat;
   background-size: cover;
