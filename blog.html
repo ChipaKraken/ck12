@@ -4,7 +4,7 @@
     <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
       <h3>{{post.title}}</h3>
-        <img alt="240x160" ng-src="{{post.attachments[0].images.post-thumbnail}}" style="width: 240px; height: 160px;">
+        <img alt="240x160" ng-src="{{post.attachments[0].images['post-thumbnail'].url}}" style="width: 240px; height: 160px;">
         <div class="caption">
           <p>{{post.excerpt}}</p>
         </div>
