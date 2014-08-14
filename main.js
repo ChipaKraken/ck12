@@ -1,3 +1,24 @@
+ck = {
+	"id": function (argument) {
+		return document.getElementById(argument);
+	},
+	"class":function (argument) {
+		return document.getElementsByClassName(argument);
+	},
+	"code":function (argument) {
+		return window.btoa(argument)
+	},
+	"get":function (url) {
+		xmlHttp = new XMLHttpRequest();
+		xmlHttp.open("GET", url, false);
+		xmlHttp.send(null);
+		return xmlHttp.responseText;
+	},
+	"json":function (url) {
+		return JSON.parse(ck.get(url))
+	}
+}
+
 angular.module('app', ['ui.router']).config([
   '$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
     $urlRouterProvider.otherwise('/');
@@ -43,4 +64,7 @@ angular.module('app', ['ui.router']).config([
         document.getElementsByTagName('body')[0].className = "def_bg";
       };     
      });
+}]).controller('blogContr', ['$scope', function($scope){
+    temp_json = ck.json('http://ck12.freeiz.com/?json=1');
+    $scope.posts = temp_json.posts;
 }]);
