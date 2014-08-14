@@ -28,6 +28,9 @@ angular.module('app', ['ui.router']).config([
     }).state('gallery', {
       url: '/gallery',
       templateUrl: 'gallery.html'
+    }).state('about', {
+      url: '/about',
+      templateUrl: 'about.html'
     }).state('bar', {
       url: '/bar',
       templateUrl: 'main-bar.html'
