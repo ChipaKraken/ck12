@@ -37,6 +37,10 @@ angular.module('app', ['ui.router']).config([
     }).state('rest', {
       url: '/rest',
       templateUrl: 'main-rest.html'
+    }).state('blog', {
+      url: '/blog',
+      templateUrl: 'blog.html',
+      controller: 'blogContr'
     })
   }
 ]).controller('mainContr', [
@@ -67,4 +71,4 @@ angular.module('app', ['ui.router']).config([
 }]).controller('blogContr', ['$scope', function($scope){
     temp_json = ck.json('http://ck12.freeiz.com/?json=1');
     $scope.posts = temp_json.posts;
-}]);
+}])
