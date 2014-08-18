@@ -55,20 +55,32 @@ angular.module('app', ['ui.router']).config([
 ]).controller("headerController", ['$scope', '$location',function ($scope, $location) { 
     $scope.isActive = function (viewLocation) { 
         return viewLocation === $location.path();
-    } 
+    }
+    $scope.Fb = "";$scope.Inst = "";$scope.iconShow = false;
     $scope.location = $location;
     $scope.$watch( 'location.path()', function() {
       if ($location.path() === '/bar'){
         document.getElementsByTagName('body')[0].className = "bar_bg";
+        $scope.Inst = "12_bar";
+        $scope.Fb = "12.Bish";
+        $scope.iconShow = true;
       }
       else if($location.path() === '/cave'){
         document.getElementsByTagName('body')[0].className = "cave_bg";
+        $scope.Fb = "Cave.cavecoffee";
+        $scope.Inst = "cave_coffee";
+        $scope.iconShow = true;
       }
       else if($location.path() === '/rest'){
         document.getElementsByTagName('body')[0].className = "rest_bg";
+        $scope.Inst = "12_restaurant";
+        $scope.Fb = "TwelRestaurant";
+        $scope.iconShow = true;
       }
       else{
         document.getElementsByTagName('body')[0].className = "def_bg";
+        $scope.Fb = "";$scope.Inst = "";
+        $scope.iconShow = false;
       };     
      });
 }]).controller('blogContr', ['$scope', function($scope){
