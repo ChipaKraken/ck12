@@ -49,12 +49,12 @@
 					<li ng-class="{ active: isActive('/gallery')}"><a href="#/gallery">Insta Галерея</a></li>
 					<li ng-class="{ active: isActive('/about')}"><a href="#/about">О нас</a></li>
 				</ul>
-				<div class="nav navbar-nav navbar-right socials" ng-class="isActive('/') ? 'hide': 'show'">
-					<i class="fs28 kraken-fb"></i>
-					<i class="fs28 kraken-tw"></i>
-					<i class="fs28 kraken-ig"></i>
-					<i class="fs28 kraken-ok"></i>
-					<i class="fs28 kraken-vk"></i>	
+				<div class="nav navbar-nav navbar-right socials" ng-class="iconShow ? 'hide': 'show'">
+					<a ng-href="https://www.facebook.com/{{Fb}}"><i class="fs28 kraken-fb"></i></a>
+					<a ng-href=""><i class="fs28 kraken-tw"></i></a>
+					<a ng-href="http://instagram.com/{{Inst}}"><i class="fs28 kraken-ig"></i></a>
+					<a ng-href=""><i class="fs28 kraken-ok"></i></a>
+					<a ng-href=""><i class="fs28 kraken-vk"></i></a>
 				</div>
 			</div><!-- /.navbar-collapse -->
 		</div>
